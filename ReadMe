@@ -1,102 +1,102 @@
 # Team 10 – Final Project Report
 
-## Problem Definition (10%)
+## Problem Definition 
 Our team identified a common and relevant challenge in Singapore’s real estate scene: How can we accurately predict private residential property prices?
 
-Instead of using public housing data (which is tightly regulated), we focused on private property prices, which are largely influenced by market forces. We explored how location, tenure, floor area, transaction timing, and other factors affect prices — and how we can use machine learning to model and predict these outcomes.
+Instead of using public housing data (which is tightly regulated), we focused on private property prices, which are largely influenced by market forces. We explored how location, remaining lease duration, floor area, transaction timing, and other factors affect prices — and how we can use machine learning to model and predict these outcomes.
 
-## Data Preparation & Cleaning (10%)
-We merged private property transaction data from URA between 2020–2025 and enriched it with:
+## Data Preparation & Cleaning 
+We merged private property transaction data from URA between 2020–2025 and supplemented it with:
 
-Geolocation Data: Used OneMap API to map coordinates for each property.
+- Geolocation Data: Used OneMap API to map coordinates for each property and obtain the coorodinates of the nearest MRT stations.
 
-Distance to MRT: Calculated using OneMap API to find the nearest MRT station.
+- Distance to MRT: Calculated the distance using the coordinates of the property and the nearest MRT stations. 
 
 Feature Engineering:
 
-Extracted lease start year, lease duration, and remaining lease.
+- Extracted lease start year, lease duration, and remaining lease.
 
-Standardized pricing using Unit Price ($PSF) instead of total price.
+- Standardized pricing using unit Price instead of total transaction price as there may be multiple units transacted in 1 transaction.
 
-Removed redundant or sparse columns.
+- Removed redundant or sparse columns such as Area (SQM), Unit Price ($PSM) and Nett Price ($).
 
-Converted temporal features and binned lease durations for modeling.
+- Converted temporal features to date-time format and binned lease durations for modeling.
 
-## Exploratory Data Analysis & Visualization (20%)
+## Exploratory Data Analysis & Visualization 
 We visualized various relationships to better understand our data:
 
 Univariate: KDE plots and boxplots of price distributions.
 
 Bivariate:
 
-Area vs Price (strong positive correlation)
+- Scatterplot and regression line of Area vs Price (strong positive correlation)
 
-Distance to MRT vs Price (weak, slightly negative)
+- Scatterplot and regression line of Distance to MRT vs Price (weak, slightly negative)
 
-Remaining Lease vs Price (stronger impact on landed homes)
+- Box plot of Remaining Lease vs Price (stronger impact on landed homes)
 
-Postal District vs Price (location matters!)
+- Box plot of Postal District vs Price (location matters!)
 
 Temporal Trends:
 
-Used Plotly for interactive visualizations of trends over time.
+- Used Plotly for interactive visualizations of trends over time.
 
-Tracked pricing dynamics across property types and sale types from 2020 to 2025.
+- Tracked pricing dynamics across property types and sale types from 2020 to 2025.
 
-## Machine Learning Models (20%)
+Location:
+- Use the latitude and longitude to map out all data points (prices, location) on a Singapore map using plotly and clustering
+
+- Explored price trends (e.g % price increases) for each location cluster
+
+## Machine Learning Models 
 We built and tested 3 ML models to predict housing prices:
 
-XGBoost
+### XGBoost 
+Distributed gradient-boosted decision tree for efficient handling of complex, non-linear relationships.
 
-Great for handling non-linear relationships.
+Most important features determined: Area (SQFT), Type of Sale, Postal District.
 
-Key features: Area (SQFT), Type of Sale, Postal District.
+### Random Forest
 
-Random Forest
+Combine multiple decision trees to produce final output that is more accurate compared to single decision tree. 
 
-Simple and interpretable ensemble model.
+Most important features determined: Area (SQFT), Remaining lease years, Postal District.
 
-Similar feature importance rankings.
+### Artificial Neural Network (ANN)
 
-Artificial Neural Network (ANN)
+Capture complex interactions with high accuracy by adjusting weights of connections and activation functions in layers of neurons to minimize prediction errors. 
 
-Captured complex interactions with high accuracy.
-
-Best performance among the three.
-
-Evaluation Metrics:
+### Evaluation Metrics:
 
 MAE, MSE, R² Score — ANN consistently had the lowest error and best fit.
 
-## Insights & Recommendations (20%)
-Area (SQFT) is by far the most influential feature.
+## Insights & Recommendations 
+- Area (SQFT) is by far the most influential feature.
 
-Location matters — both in terms of postal district and MRT proximity.
+- Location matters — both in terms of postal district and MRT proximity.
 
-Timing and Lease are also key — price varies across years and based on remaining lease.
+- Timing and Lease are also key — price varies across years and based on remaining lease.
 
-Model Utility:
+### Model Utility:
 
-Can be embedded in platforms like PropertyGuru to provide live estimates.
+Such predicition ML algorithm can be embedded in platforms like PropertyGuru to provide live estimates. This helps buyers, sellers, and agents make informed, data-driven decisions when it comes to private property. 
 
-Helps buyers, sellers, and agents make informed decisions.
-
-Presentation Quality (10%)
+## Presentation Quality 
 We delivered a structured and visual-heavy presentation, covering:
 
-Motivation and methodology.
+- Motivation and methodology
 
-Deep-dive into EDA and modeling.
+- Deep-dive into EDA and modeling
 
-Clear comparison of ML models.
+- Clear comparison of ML models
 
-Market implications and real-world applications.
+- Market implications and real-world applications
 
-## Learning & Going Beyond the Course (10%)
+## Learning & Going Beyond the Course 
 We pushed beyond the syllabus by:
 
-Applying clustering to identify price trends by region.
+- Applying clustering to identify price trends by region.
 
-Using advanced visualizations with Plotly and seaborn.
+- Using advanced visualizations with Plotly and seaborn.
 
-Experimenting with ANN, XGBoosta random forest ML models.
+- Experimenting with ANN, XGBoosta random forest ML models.
