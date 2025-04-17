@@ -1,0 +1,102 @@
+# Team 10 – Final Project Report
+
+## Problem Definition (10%)
+Our team identified a common and relevant challenge in Singapore’s real estate scene: How can we accurately predict private residential property prices?
+
+Instead of using public housing data (which is tightly regulated), we focused on private property prices, which are largely influenced by market forces. We explored how location, tenure, floor area, transaction timing, and other factors affect prices — and how we can use machine learning to model and predict these outcomes.
+
+## Data Preparation & Cleaning (10%)
+We merged private property transaction data from URA between 2020–2025 and enriched it with:
+
+Geolocation Data: Used OneMap API to map coordinates for each property.
+
+Distance to MRT: Calculated using OneMap API to find the nearest MRT station.
+
+Feature Engineering:
+
+Extracted lease start year, lease duration, and remaining lease.
+
+Standardized pricing using Unit Price ($PSF) instead of total price.
+
+Removed redundant or sparse columns.
+
+Converted temporal features and binned lease durations for modeling.
+
+## Exploratory Data Analysis & Visualization (20%)
+We visualized various relationships to better understand our data:
+
+Univariate: KDE plots and boxplots of price distributions.
+
+Bivariate:
+
+Area vs Price (strong positive correlation)
+
+Distance to MRT vs Price (weak, slightly negative)
+
+Remaining Lease vs Price (stronger impact on landed homes)
+
+Postal District vs Price (location matters!)
+
+Temporal Trends:
+
+Used Plotly for interactive visualizations of trends over time.
+
+Tracked pricing dynamics across property types and sale types from 2020 to 2025.
+
+## Machine Learning Models (20%)
+We built and tested 3 ML models to predict housing prices:
+
+XGBoost
+
+Great for handling non-linear relationships.
+
+Key features: Area (SQFT), Type of Sale, Postal District.
+
+Random Forest
+
+Simple and interpretable ensemble model.
+
+Similar feature importance rankings.
+
+Artificial Neural Network (ANN)
+
+Captured complex interactions with high accuracy.
+
+Best performance among the three.
+
+Evaluation Metrics:
+
+MAE, MSE, R² Score — ANN consistently had the lowest error and best fit.
+
+## Insights & Recommendations (20%)
+Area (SQFT) is by far the most influential feature.
+
+Location matters — both in terms of postal district and MRT proximity.
+
+Timing and Lease are also key — price varies across years and based on remaining lease.
+
+Model Utility:
+
+Can be embedded in platforms like PropertyGuru to provide live estimates.
+
+Helps buyers, sellers, and agents make informed decisions.
+
+Presentation Quality (10%)
+We delivered a structured and visual-heavy presentation, covering:
+
+Motivation and methodology.
+
+Deep-dive into EDA and modeling.
+
+Clear comparison of ML models.
+
+Market implications and real-world applications.
+
+## Learning & Going Beyond the Course (10%)
+We pushed beyond the syllabus by:
+
+Applying clustering to identify price trends by region.
+
+Using advanced visualizations with Plotly and seaborn.
+
+Experimenting with ANN, XGBoosta random forest ML models.
