@@ -3,6 +3,11 @@
 - Sun SiTong (U2322401J)
 - Tan Hsuen Yin Andria (U2320699F)
 
+---
+## 📺 **Project Presentation**
+**Link to Video Presentation: https://drive.google.com/file/d/1kbPKZO3slRzuhoUIGSj_nLTZF1xkn2Z4/view?usp=sharing**
+---
+
 ## Problem Definition 
 Our team identified a common and relevant challenge in Singapore’s real estate scene: How can we accurately predict private residential property prices?
 
