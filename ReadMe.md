@@ -1,4 +1,4 @@
-# Team 10 – Final Project
+![image](https://github.com/user-attachments/assets/19ad6d7e-1e25-4da1-a0a1-2735e6f3d4ac)# Team 10 – Final Project
 - Heng Xin Yu Felicia (U2321432B)
 - Sun SiTong (U2322401J)
 - Tan Hsuen Yin Andria (U2320699F)
@@ -96,10 +96,21 @@ We delivered a structured and visual-heavy presentation, covering:
 - Market implications and real-world applications
 
 ## Learning & Going Beyond the Course 
-We pushed beyond the syllabus by:
+We explored beyond the syllabus by:
 
 - Applying clustering to identify price trends by region.
 
 - Using advanced visualizations with Plotly and seaborn.
 
 - Experimenting with ANN, XGBoost and Random Forest ML models.
+
+## References 
+- https://mrtmapsingapore.com/mrt-stations-singapore/
+- https://www.kaggle.com/code/sohamohajeri/house-price-predictions-with-xgboost-regression
+- https://www.kaggle.com/code/dansbecker/xgboost
+- https://link.springer.com/chapter/10.1007/978-981-97-3954-7_10
+- https://www.spotfire.com/glossary/what-is-a-random-forest
+
+
+
+
