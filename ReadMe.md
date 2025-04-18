@@ -110,6 +110,8 @@ We explored beyond the syllabus by:
 - https://www.kaggle.com/code/dansbecker/xgboost
 - https://link.springer.com/chapter/10.1007/978-981-97-3954-7_10
 - https://www.spotfire.com/glossary/what-is-a-random-forest
+- https://github.com/manoj-acharya/ann_basic_tutorial/tree/main
+- https://www.geeksforgeeks.org/ml-one-hot-encoding/
 
 
 
