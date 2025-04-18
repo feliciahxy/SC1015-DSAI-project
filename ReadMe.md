@@ -1,7 +1,7 @@
 # Team 10 – Final Project
-Heng Xin Yu Felicia (U2321432B)
-Sun SiTong (U2322401J)
-Tan Hsuen Yin Andria (U2320699F)
+- Heng Xin Yu Felicia (U2321432B)
+- Sun SiTong (U2322401J)
+- Tan Hsuen Yin Andria (U2320699F)
 
 ## Problem Definition 
 Our team identified a common and relevant challenge in Singapore’s real estate scene: How can we accurately predict private residential property prices?
