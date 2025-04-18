@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/19ad6d7e-1e25-4da1-a0a1-2735e6f3d4ac)# Team 10 – Final Project
+# Team 10 – Final Project
 - Heng Xin Yu Felicia (U2321432B)
 - Sun SiTong (U2322401J)
 - Tan Hsuen Yin Andria (U2320699F)
