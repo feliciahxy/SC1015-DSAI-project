@@ -74,7 +74,7 @@ Capture complex interactions with high accuracy by adjusting weights of connecti
 MAE, MSE, R² Score — ANN consistently had the lowest error and best fit.
 
 ## Insights & Recommendations 
-- Random forest is the most efficient and appropriate model for predicting housing prices. 
+- **Random forest** is the most efficient and appropriate model for predicting housing prices. 
 - Area (SQFT) is by far the most influential feature, followed by remaining lease duration and location. 
 
 ### Model Utility:
