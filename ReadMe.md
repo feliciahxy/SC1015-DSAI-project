@@ -71,11 +71,8 @@ Capture complex interactions with high accuracy by adjusting weights of connecti
 MAE, MSE, R² Score — ANN consistently had the lowest error and best fit.
 
 ## Insights & Recommendations 
-- Area (SQFT) is by far the most influential feature.
-
-- Location matters — both in terms of postal district and MRT proximity.
-
-- Timing and Lease are also key — price varies across years and based on remaining lease.
+- Random forest is the most efficient and appropriate model for predicting housing prices. 
+- Area (SQFT) is by far the most influential feature, followed by remaining lease duration and location. 
 
 ### Model Utility:
 
@@ -88,7 +85,7 @@ We delivered a structured and visual-heavy presentation, covering:
 
 - Deep-dive into EDA and modeling
 
-- Clear comparison of ML models
+- Clear comparison of ML models (XGBoost, Random Forest, ANN)
 
 - Market implications and real-world applications
 
@@ -99,4 +96,4 @@ We pushed beyond the syllabus by:
 
 - Using advanced visualizations with Plotly and seaborn.
 
-- Experimenting with ANN, XGBoosta random forest ML models.
+- Experimenting with ANN, XGBoost and random forest ML models.
