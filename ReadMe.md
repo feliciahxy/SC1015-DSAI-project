@@ -6,6 +6,8 @@
 ---
 ## 📺 **Project Presentation**
 **Link to Video Presentation: https://drive.google.com/file/d/1kbPKZO3slRzuhoUIGSj_nLTZF1xkn2Z4/view?usp=sharing**
+
+the video file was too large and couldnt be uploaded to github even with git lfs, so we included a link to it here
 ---
 
 ## Problem Definition 
