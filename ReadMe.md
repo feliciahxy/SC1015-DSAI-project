@@ -28,7 +28,8 @@ Feature Engineering:
 ## Exploratory Data Analysis & Visualization 
 We visualized various relationships to better understand our data:
 
-Univariate: KDE plots and boxplots of price distributions.
+Univariate: 
+- KDE plots and boxplots of price distributions.
 
 Bivariate:
 
@@ -57,25 +58,27 @@ We built and tested 3 ML models to predict housing prices:
 ### XGBoost 
 Distributed gradient-boosted decision tree for efficient handling of complex, non-linear relationships.
 
-Most important features determined: Area (SQFT), Type of Sale, Postal District.
+Most important features determined: Type of Sale, Area (SQFT), Remaining Lease Years.
+
+### Artificial Neural Network (ANN)
+
+Capture complex interactions with high accuracy by adjusting weights of connections and activation functions in layers of neurons to minimize prediction errors.
+
+Most important features determined: Area (SQFT), Sale Date, Remaining Lease Years.
 
 ### Random Forest
 
 Combine multiple decision trees to produce final output that is more accurate compared to single decision tree. 
 
-Most important features determined: Area (SQFT), Remaining lease years, Postal District.
-
-### Artificial Neural Network (ANN)
-
-Capture complex interactions with high accuracy by adjusting weights of connections and activation functions in layers of neurons to minimize prediction errors. 
+Most important features determined: Area (SQFT), Remaining Lease Years, Postal District.
 
 ### Evaluation Metrics:
 
-MAE, MSE, R² Score — ANN consistently had the lowest error and best fit.
+MAE, MSE, R² Score — Random Forest consistently had the lowest error and best fit.
 
 ## Insights & Recommendations 
 - **Random forest** is the most efficient and appropriate model for predicting housing prices. 
-- Area (SQFT) is by far the most influential feature, followed by remaining lease duration and location. 
+- Area (SQFT) is by far the most influential feature, followed by Remaining Lease Duration and Postal District (Location). 
 
 ### Model Utility:
 
@@ -99,4 +102,4 @@ We pushed beyond the syllabus by:
 
 - Using advanced visualizations with Plotly and seaborn.
 
-- Experimenting with ANN, XGBoost and random forest ML models.
+- Experimenting with ANN, XGBoost and Random Forest ML models.
